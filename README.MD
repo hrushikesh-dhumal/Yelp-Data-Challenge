@@ -31,11 +31,14 @@ My  Analysis of [Yelp Data Set](https://www.yelp.com/dataset_challenge) to predi
 	git clone https://github.com/hrushikesh-dhumal/Yelp-Data-Challlenge.git
 	```
 
-2. Dependencies 
-I will be adding to this section soon.
+2. Dependencies
+
+Install the requirements using `pip install -r requirements.txt`
+
+It is suggested that you have [Anaconda](https://www.continuum.io/downloads) which covers majority of the dependencies. 
 
 # Example
-I will be adding to this section soon.
+The entire work is in form of python notebook. Execute the playbooks in order of their serial number.
 
 # Author Information
 Hrushikesh Dhumal(hrushikesh.dhumal@gmail.com)
