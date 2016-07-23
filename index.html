@@ -1,81 +1,81 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Yelp-data-challenge : sentiment analysis in yelp data">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Yelp-data-challenge</title>
+    <meta charset="UTF-8">
+    <title>Yelp-data-challenge by hrushikesh-dhumal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Yelp-data-challenge</h1>
+      <h2 class="project-tagline">sentiment analysis in yelp data</h2>
+      <a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge" class="btn">View on GitHub</a>
+      <a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge">View on GitHub</a>
-
-          <h1 id="project_title">Yelp-data-challenge</h1>
-          <h2 id="project_tagline">sentiment analysis in yelp data</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
+    <section class="main-content">
+      <h1>
 <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h1>
 
 <hr>
 
-<p>With the explosion of social media, more and more people are blogging and writing reviews about different places they visit. Yelp is one the popular platform where people post their ratings and write reviews. User-generated reviews are usually inconsistent in terms of length, content, writing style and usefulness because they are written by unprofessional writers. Also, they contain a mix of positive and negative emotions. Important information can be easily obscured unless users are willing to spend a great deal of time and effort on reading the reviews thoroughly. A common natural language processing technique is to generate bag of words and use that for analysis. But, it does not account for the positive or negative sentiment of the user. So we are using the word embedding approach to understand how neural networks can help us better identify the sentiments in the reviews. We are considering the five start ratings by user as the parameter to measure the degree of positivity or negativity in the review. One being the most negative and five being the most positive review. Through this work, we hope to encourage more researchers to study and analyze the Yelp dataset.</p>
+<p>With the explosion of social media, more and more people are blogging and writing reviews about different places they visit. Yelp is one the popular platform where people post their ratings and write reviews. User-generated reviews are usually inconsistent in terms of length, content, writing style and usefulness because they are written by unprofessional writers. Also, they contain a mix of positive and negative emotions. Important information can be easily obscured unless users are willing to spend a great deal of time and effort on reading the reviews thoroughly. A common natural language processing technique is to generate bag of words and use that for analysis. But, it does not account for the positive or negative sentiment of the user. So I am using the word embedding approach to understand how neural networks can help us better identify the sentiments in the reviews. I am considering the five start ratings by user as the parameter to measure the degree of positivity or negativity in the review. One being the most negative and five being the most positive review. Through this work, I hope to encourage more researchers to study and analyze the Yelp data set.</p>
 
-<p><a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge">This repository</a> has my code and a sample data set to play around.</p>
-
-<p>The project is broken into 3 parts: </p>
+<p><a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge">This repository</a> has my code and a sample data set to play around. The project is broken into 3 parts: </p>
 
 <h1>
 <a id="data-cleaning" class="anchor" href="#data-cleaning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data Cleaning</h1>
 
-<p>1 Converted data from json file to flat format- csv.<br>
-2 Identified and removed features with null values.<br>
-3 Inner-joined key-ids from Users, Businesses and Review tables to create the master data set with 22,25,213 records.<br>
-4 Created a random subset of 2,225 records. I have provided this subset in the repository. </p>
+<hr>
+
+<ol>
+<li>Converted data from json file to flat format- csv.<br>
+</li>
+<li>Identified and removed features with null values.<br>
+</li>
+<li>Inner-joined key-ids from Users, Businesses and Review tables to create the master data set with 22,25,213 records.<br>
+</li>
+<li>Created a random subset of 2,225 records. I have provided this subset in the repository. </li>
+</ol>
 
 <h1>
 <a id="exploratory-data-analysis" class="anchor" href="#exploratory-data-analysis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Exploratory Data Analysis</h1>
 
+<hr>
+
 <p>In EDA, I am trying to find pertinent features for the next step which is the predictive analytics/machine learning task. 
-<img src="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/blob/master/img/Review%20star%20distribution.png" alt="Review star distribution"></p>
+<img src="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/tree/gh-pages/images/Review%20star%20distribution.png" alt="Review star distribution"></p>
 
 <p>When I visualized distribution of star rating, I was surprised to see it was skewed to the 4 and 5 star categories heavily. They consist of around 80% of the distribution, whereas the 1, 2, and 3 star categories are each only around 10-15% at most.  This is confirmed by a separate  analysis by Max Woolf on 1 and 5 star reviews which showed, that Yelp reviews have started to appear more optimistically biased as time passes. The data subset reflects this skewed distribution, and uneven class distribution will become noteworthy further on in our predictive analytics task.
 We used this information to set our baseline accuracy for algorithm evaluation to 40% which is the percentage of 5 star ratings in the data. </p>
 
 <p>Next I was curious about what kinds of words, are characteristic of different star categories so I did some word cloud visualizations. </p>
 
-<p>1 <a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/blob/master/img/Wordcloud-1%20star.png">Word cloud for one star reviews</a><br>
+<p>1 
+<img src="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/blob/master/img/Wordcloud-1%20star.png" alt="Word cloud for one star reviews"><br>
 The 1-star Yelp reviews use very little positive language, for eg: “Horrible” and “Worst”. 1-Star reviews frequently contain warnings for potential customers, which promises that the author will “never go back”. <em>Sometime we see sarcasm in form of words like “wow” and “love” used in 1 star rating.</em> </p>
 
-<p>2 <a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/blob/master/img/Wordcloud-2%20star.png">Word cloud for two stars reviews</a></p>
+<p>2 
+<img src="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/blob/master/img/Wordcloud-2%20star.png" alt="Word cloud for two stars reviews"></p>
 
-<p>3 <img src="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/blob/master/img/Wordcloud-3%20star.png" alt="Word cloud for three stars reviews"></p>
+<p>3 
+<img src="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/blob/master/img/Wordcloud-3%20star.png" alt="Word cloud for three stars reviews"></p>
 
-<p>4 <img src="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/blob/master/img/Wordcloud-4%20star.png" alt="Word cloud for four stars reviews"></p>
+<p>4 
+<img src="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/blob/master/img/Wordcloud-4%20star.png" alt="Word cloud for four stars reviews"></p>
 
-<p>5 <img src="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/blob/master/img/Wordcloud-5%20star.png" alt="Word cloud for five stars reviews"></p>
+<p>5 
+<img src="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/blob/master/img/Wordcloud-5%20star.png" alt="Word cloud for five stars reviews"></p>
 
 <p>The 5-star Yelp reviews contain many instances of “Great”, “Good”, and “best”. But reviewers are also using positive words sarcastically to indicate negative sentiments. This inspired me to use neural networks in form of word embedding's and Long Short term Memory neural networks.</p>
 
 <p>Further, to see if Yelp reviews follow the <a href="https://en.wikipedia.org/wiki/Zipf%27s_law">Zipfs Law</a> I created the following visualization to see how the most frequently occurring words are ranked.<br>
-<a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/blob/master/img/Zipfs%20plot.png">Zipfs plot</a></p>
+<img src="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/blob/master/img/Zipfs%20plot.png" alt="Zipfs plot"></p>
 
 <p>The plot basically shows the log of rank i.e. descending order of how frequently is a word occurring in the yelp corpus Vs log of the frequency of word. I can see that it is almost a straight line indicating that even Yelp corpus focus the Zipfs law! To further enhance the understanding I have created an interactive vizualization where you can see the frequency of word vs rank plot. </p>
 
@@ -91,18 +91,15 @@ The 1-star Yelp reviews use very little positive language, for eg: “Horrible�
 <a id="author-information" class="anchor" href="#author-information" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Author Information</h1>
 
 <p>Hrushikesh Dhumal(<a href="mailto:hrushikesh.dhumal@gmail.com">hrushikesh.dhumal@gmail.com</a>)</p>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Yelp-data-challenge maintained by <a href="https://github.com/hrushikesh-dhumal">hrushikesh-dhumal</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge">Yelp-data-challenge</a> is maintained by <a href="https://github.com/hrushikesh-dhumal">hrushikesh-dhumal</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-    
+    </section>
 
+  
   </body>
 </html>
