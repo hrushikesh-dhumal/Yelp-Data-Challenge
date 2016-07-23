@@ -1,5 +1,7 @@
 # Synopsis
-My  Analysis of [Yelp Data Set](https://www.yelp.com/dataset_challenge) to predict user sentiments based on their review. I have converted data in json format to pandas data frame and made some changes to the original json data structure to reduce duplicates and make data more accessible for query and analysis. I am joining three tables, Business, Review and User. Following are the steps followed in the project-
+The Yelp reviews are rich source of information for natural language processing applications. I am are building a sentiment analysis system for English language which analyzes how much of the review is positive or negative based on the text review and star rating Yelp Dataset Challenge. I use a combination of two feature generation methods and two machine learning models to find the best prediction result. My approach is to create bag of words from the top frequent words in all raw text reviews and using word embedding to create a high dimensional representation of each of the review. Then I do a performance measure of two machine learning algorithms- Support Vector Machines (SVM) and Long Short Term Memory (LSTM). I have used python to implement the system.
+
+This repository has a sample data set to play around the code.
 
 ## [Data Cleaning](yelp_01dataCleaning.ipynb)
 1.	Lowercase
@@ -37,8 +39,13 @@ Install the requirements using `pip install -r requirements.txt`
 
 It is suggested that you have [Anaconda](https://www.continuum.io/downloads) which covers majority of the dependencies. 
 
-# Example
-The entire work is in form of python notebook. Execute the playbooks in order of their serial number.
+## Execution instructions
+Execute the playbooks in order of their serial number. 
+
+The data cleaning has already been done in the sample data. In case you want work on entire data acquired from [yelp](https://www.yelp.com/dataset_challenge) create a directory named raw in data folder and download the data here. Then you will be able to execute the code in [yelp_01dataCleaning.ipynb](yelp_01dataCleaning.ipynb) notebook which will genrate csv which can be used in further analysis. 
+
+	Note: if you want to use your own directory structure please edit the YELP_DATA_ in yelp_utils file
+
 
 # Author Information
 Hrushikesh Dhumal(hrushikesh.dhumal@gmail.com)
