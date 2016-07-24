@@ -1,34 +1,25 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>Yelp-data-challenge by hrushikesh-dhumal</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Yelp-data-challenge</h1>
-        <p>sentiment analysis in yelp data</p>
+    <section class="page-header">
+      <h1 class="project-name">Yelp-data-challenge</h1>
+      <h2 class="project-tagline">sentiment analysis in yelp data</h2>
+      <a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge" class="btn">View on GitHub</a>
+      <a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-        <p class="view"><a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge">View the Project on GitHub <small>hrushikesh-dhumal/Yelp-Data-Challenge</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
+    <section class="main-content">
+      <h1>
 <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h1>
 
 <hr>
@@ -65,16 +56,19 @@ We used this information to set our baseline accuracy for algorithm evaluation t
 
 <p>Next I was curious about what kinds of words, are characteristic of different star categories so I did some word cloud visualizations. </p>
 
-<p><img src="https://raw.githubusercontent.com/hrushikesh-dhumal/Yelp-Data-Challenge/gh-pages/images/Wordcloud_1_star.png" alt="Word cloud for one star reviews"><br>
-The 1-star Yelp reviews use very little positive language, for eg: “Horrible” and “Worst”. 1-Star reviews frequently contain warnings for potential customers, which promises that the author will “never go back”. <strong><em>Sometime we see sarcasm in form of words like “wow” and “love” used in 1 star rating.</em></strong> </p>
-
-<p><img src="https://raw.githubusercontent.com/hrushikesh-dhumal/Yelp-Data-Challenge/gh-pages/images/Wordcloud_2_star.png" alt="Word cloud for two stars reviews"></p>
-
-<p><img src="https://raw.githubusercontent.com/hrushikesh-dhumal/Yelp-Data-Challenge/gh-pages/images/Wordcloud_3_star.png" alt="Word cloud for three stars reviews"></p>
-
-<p><img src="https://raw.githubusercontent.com/hrushikesh-dhumal/Yelp-Data-Challenge/gh-pages/images/Wordcloud_4_star.png" alt="Word cloud for four stars reviews"></p>
-
-<p><img src="https://raw.githubusercontent.com/hrushikesh-dhumal/Yelp-Data-Challenge/gh-pages/images/Wordcloud_5_star.png" alt="Word cloud for five stars reviews"></p>
+<ol>
+<li><p>Word cloud for one star reviews<br>
+<img src="https://raw.githubusercontent.com/hrushikesh-dhumal/Yelp-Data-Challenge/gh-pages/images/Wordcloud_1_star.png" alt="Word cloud for one star reviews"><br>
+The 1-star Yelp reviews use very little positive language, for eg: “Horrible” and “Worst”. 1-Star reviews frequently contain warnings for potential customers, which promises that the author will “never go back”. <strong><em>Sometime we see sarcasm in form of words like “wow” and “love” used in 1 star rating.</em></strong> </p></li>
+<li><p>Word cloud for two star reviews<br>
+<img src="https://raw.githubusercontent.com/hrushikesh-dhumal/Yelp-Data-Challenge/gh-pages/images/Wordcloud_2_star.png" alt="Word cloud for two stars reviews"></p></li>
+<li><p>Word cloud for three star reviews<br>
+<img src="https://raw.githubusercontent.com/hrushikesh-dhumal/Yelp-Data-Challenge/gh-pages/images/Wordcloud_3_star.png" alt="Word cloud for three stars reviews"></p></li>
+<li><p>Word cloud for four star reviews<br>
+<img src="https://raw.githubusercontent.com/hrushikesh-dhumal/Yelp-Data-Challenge/gh-pages/images/Wordcloud_4_star.png" alt="Word cloud for four stars reviews"></p></li>
+<li><p>Word cloud for five star reviews<br>
+<img src="https://raw.githubusercontent.com/hrushikesh-dhumal/Yelp-Data-Challenge/gh-pages/images/Wordcloud_5_star.png" alt="Word cloud for five stars reviews"></p></li>
+</ol>
 
 <p>The 5-star Yelp reviews contain many instances of “Great”, “Good”, and “best”. But reviewers are also using positive words sarcastically to indicate negative sentiments. This inspired me to use neural networks in form of word embedding's and Long Short term Memory neural networks.</p>
 
@@ -93,13 +87,15 @@ The 1-star Yelp reviews use very little positive language, for eg: “Horrible�
 <a id="predictive-analyticsmachine-learning" class="anchor" href="#predictive-analyticsmachine-learning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Predictive analytics/machine learning</h1>
 
 <hr>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/hrushikesh-dhumal">hrushikesh-dhumal</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/hrushikesh-dhumal/Yelp-Data-Challenge">Yelp-data-challenge</a> is maintained by <a href="https://github.com/hrushikesh-dhumal">hrushikesh-dhumal</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+    </section>
+
+  
   </body>
 </html>
