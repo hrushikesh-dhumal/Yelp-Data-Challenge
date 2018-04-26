@@ -141,3 +141,4 @@ $RECYCLE.BIN/
 # Ipython notebook
 # ==============================
 *.pyc
+data/csv/business_review_user_0_0_1Percent.csv
